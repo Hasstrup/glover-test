@@ -1,0 +1,22 @@
+{% extends 'layout.html'%}
+
+{% block content %}
+<form class="ui form">
+  <div class="field">
+    <label>First Name</label>
+    {{ form.name }}
+  </div>
+  <div class="field">
+    <label>Component</label>
+    {{ form.component }}
+  </div>
+  <div class="field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden">
+      <label>I agree to the Terms and Conditions</label>
+    </div>
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block content %}
+  <h1> Welcome to glover </h1>
+     <h2> Create an account by signing up here <h2>
+
+       <div class='container'>
+
+       <form class="ui form" action='' method='Post'>
+  <div class="field">
+    <label>Username</label>
+    <input type="text" name="username" placeholder="Username">
+  </div>
+  <div class="field">
+    <label>Email</label>
+    <input type="text" name="email" placeholder="email">
+  </div>
+  <div class="field">
+    <label>Password</label>
+    <input type="password" name="password" placeholder="password">
+  </div>
+  <div class="field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden">
+      <label>I agree to the Terms and Conditions</label>
+    </div>
+  </div>
+  <button class="ui button" type="submit">Create</button>
+</form>
+</div>
+
+{% endblock %}
